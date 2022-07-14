@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="description" content="스테이다다는 아파트에 비해 지금껏 소외 되었던 다세대,연립,단독주택 시장의 가치에 더 나은 주거환경을 제공하는 프리미엄 주택 구독 플랫폼입니다.">
+<meta name="keywords" content="스테이다다, staydada, 익선다다, 주택, 플랫폼">
+<meta property="og:url" content="http://staydada.com">
+<meta property="og:title" content="Welcome to Staydada">
+<meta property="og:image" content="../images/sign_staydada.png">
+<meta property="og:description" content="스테이다다는 아파트에 비해 지금껏 소외 되었던 다세대,연립,단독주택 시장의 가치에 더 나은 주거환경을 제공하는 프리미엄 주택 구독 플랫폼입니다.">
+<meta property="og:type" content="website">
+<link rel="shortcut icon" href="../images/favicon_staydada.ico">
+
+<link rel="stylesheet" type="text/css" href="../css/font.css" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="../css/header_footer.css">
+<link rel="stylesheet" type="text/css" href="../css/slick_style.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/responsive.css">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="../js/fadeinup.js"></script>
+<script type="text/javascript" src="../js/TweenMax.js"></script> 
+<script type="text/javascript" src="../js/UI.menu.js"></script>
+<script type="text/javascript" src="../js/slick.js"></script>
+<script type="text/javascript" src="../js/jquery.leanModal.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<script>
+$(document).ready(function() {
+	var max = 100; 
+	$(window).scroll(function(){
+		var scrollPX = $(this).scrollTop();
+		if( scrollPX  < max ) {
+			$("#header").removeClass("change");
+			$(".btn_top").css({"opacity": "0"});
+		}else{
+			$("#header").addClass("change");
+			$(".btn_top").css({"opacity": "1"});
+		}	
+	});
+	$('.btn_top').bind('click', function() {
+		$('html, body').animate({scrollTop:0},400);
+		return false;
+	});
+	$('.wish_icon').click(function(){
+		$(this).toggleClass('on');
+	});
+	$('.pointer_faq').click(function(){
+		$(this).toggleClass('content-visible');
+	});
+}); 
+</script>
+
+<title>Staydada</title>
+</head>
+<body>
+<div class="btn_top"><img src="../images/btn_top.svg"></div>
+<div id="container">
+	<header id="header">				
+		<!-- 데스크탑메뉴 -->
+		<section>
+			<a href="../index.html"><div class="top_logo"></div></a>
+			<div class="menu_list pc_only_1024">
+				<a href="../about.html"><span class="">About</span></a>
+				<a href="../stay/stay.html"><span class="">Stay</span></a>
+				<a href="../shop/shop.html"><span class="">α-Shop</span></a>
+				<a href="apply.html"><span class="active">Application</span></a>
+			</div>
+			<div class="side_menu pc_only_1024">
+				<ul>
+					<li><a href="../franchise.html">Franchise</a></li>
+					<li><a href="../member/join.html">Join</a></li>
+					<!-- 로그인후노출
+					<li><a href="#">Mypage</a>
+						<ul>
+							<li><a href="../member/wish_list.html">관심리스트</a></li>
+							<li><a href="../member/apply_list.html">입주신청내역</a></li>
+							<li><a href="../member/my_modify.html">회원정보수정</a></li>
+						</ul>
+					</li>-->
+					<li><a href="../member/login.html">Login</a></li>
+					<!-- <li><a href="#">Logout</a></li> -->
+				</ul>
+			</div>
+		</section>
+		<!--/ 데스크탑메뉴 -->
+		
+		<!-- 나의관심리스트 -->
+		<section id="gnb" class="">
+			<div class="menu_open wish_list"></div>
+				<section class="gnb_wrap" style="height: 100%;">
+					<div id="wish_container" class="gnb_container">
+						<h2 class="wish"><strong>나의 관심 리스트</strong></h2>
+						<div class="mb60">
+							<h1 class="wish blue">관심지점</h1>
+							<ul class="half_wrap_small">
+								<li>
+									<p><span class="wish_close"></span><a href="../stay/stay_detail.html"><img src="../images/img_stay_photo01.jpg"></a></p>
+									<p class="shop_ti ti">신월1호점</p>
+									<p>입주가능</p>
+								</li>
+								<li>
+									<p><span class="wish_close"></span></span><a href="../stay/stay_detail.html"><img src="../images/img_stay_photo02.jpg"></a></p>
+									<p class="shop_ti ti">왕십리점</p>
+									<p>입주가능</p>
+								</li>
+								<li>
+									<p><span class="wish_close"></span></span><a href="../stay/stay_detail.html"><img src="../images/img_stay_photo03.jpg"></a></p>
+									<p class="shop_ti ti">서울대입구점</p>
+									<p>입주불가</p>
+								</li>
+								<li>
+									<p><span class="wish_close"></span></span><a href="../stay/stay_detail.html"><img src="../images/img_stay_photo04.jpg"></a></p>
+									<p class="shop_ti ti">사당점</p>
+									<p>입주가능</p>
+								</li>
+							</ul>
+						</div>
+						<div class="">
+							<h1 class="wish blue">관심호실</h1>
+							<ul class="half_wrap_small">
+								<li>
+									<p><span class="wish_close"></span><a id="go" rel="leanModal" name="m_pop01" href="#m_pop01"><img src="../images/img_stay_photo_ho01.jpg"></a></p>
+									<p class="shop_ti ti">신월1호점 201호</p>
+									<p>입주가능</p>
+								</li>
+								<li>
+									<p><span class="wish_close"></span></span><a id="go" rel="leanModal" name="m_pop01" href="#m_pop01"><img src="../images/img_stay_photo_ho02.jpg"></a></p>
+									<p class="shop_ti ti">낙성대점 201호</p>
+									<p>입주가능</p>
+								</li>
+								<li>
+									<p><span class="wish_close"></span></span><a id="go" rel="leanModal" name="m_pop01" href="#m_pop01"><img src="../images/img_stay_photo_ho03.jpg"></a></p>
+									<p class="shop_ti ti">왕십리점 201호</p>
+									<p>입주불가</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--/ wish_container -->
+					<p class="close"><span class="blind">메뉴 닫기</span></p>
+				</section>
+			<div class="over_back"></div>
+		</section>
+		<!--/ 나의관심리스트 -->
+
+		<!-- 모바일메뉴 -->
+		<section class="partner mo_only_1024">
+			<div class="menu_open"><img src="../images/btn_top_menu.png" alt="좌측메뉴"></div>
+				<!-- 좌측사이드바 -->			
+				<div class="partner_wrap" style="height: 100%;">
+					<div class="gnb_container side_menu_wrap">
+						<!-- 메뉴 -->
+								<div class="cd-faq-items">
+									<ul id="side_menu" class="cd-faq-group">
+										<li><a href="../about.html"><span>About</span></a></li>
+										<li><a href="../stay/stay.html"><span>Stay</span></a></li>
+										<li><a href="../shop/shop.html"><span>α-Shop</span></a></li>
+										<li><a href="apply.html"><span>Application</span></a></li>
+
+										<li class="mt40"><a href="../franchise.html">Franchise</a></li>
+										<li><a href="../member/join.html">Join</a></li>
+										<li><a href="../member/login.html">Login</a></li>
+										<li class="pointer_faq">
+											<a href="#"><span class="cd-faq-trigger">Mypage</span></a>
+											<ul class="cd-faq-content">
+												<li><a href="../member/wish_list.html">관심리스트</a></li>
+												<li><a href="../member/apply_list.html">입주신청내역</a></li>
+												<li><a href="../member/my_modify.html">회원정보수정</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+						<!--/ 메뉴 -->
+					</div>
+					<p class="close"><span class="blind">닫기</span></p>
+				</div>
+				<!--/ 좌측사이드바 -->	
+			<div class="over_back"></div>
+		</section>
+		<!--/ 모바일메뉴 -->
+
+	</header>
+
+ <!-- wrap -->
+<div class="wrap">
+
+	<section>
+		<div class="row_wrap fir">
+			<div class="copy_wrap_normal row_ti">
+				<ul class="fadeInUp ani_paused">
+					<li class="main_copy">지점 및<br>호실 선택 </li>
+					<li class="copy">지도에서 지점을 선택하면 우측 호실리스트에서 호실을 보실 수 있습니다.</li>
+				</ul>
+			</div>
+			<div class="map_wrap">
+				<div class="map_marker sinwol01">신월1호점</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25301.22383600304!2d126.99980794178148!3d37.563238900000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2dda8b6c867%3A0x9589703a02af5bf3!2zKOyjvCnsnbXshKDri6Tri6Q!5e0!3m2!1sko!2skr!4v1634143508326!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				
+				<div class="hosil_select_list_wrap">
+					<ul id="basics" class="cd-faq-group">
+						<li class="pointer_faq">
+							<span class="cd-faq-trigger">신월1호점</span>
+							<div class="cd-faq-content">
+								<ul>
+									<li><a id="go" rel="leanModal" name="m_pop01" href="#m_pop01">201호 (15.5㎡/ 월50만원)</a></li>
+									<li><a id="go" rel="leanModal" name="m_pop01" href="#m_pop01">202호 (21.1㎡/ 월59만원)</a></li>
+									<li><a id="go" rel="leanModal" name="m_pop01" href="#m_pop01">203호 (17.9㎡/ 월87만원)</a></li>
+									<li><a id="go" rel="leanModal" name="m_pop01" href="#m_pop01">204호 (21.7㎡/ 월21만원)</a></li>
+									<li><a id="go" rel="leanModal" name="m_pop01" href="#m_pop01">205호 (38.3㎡/ 월53만원)</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="textcenter mt70">
+			<a id="go" rel="leanModal" name="home_yesno" href="#home_yesno"><p class="btn_box blue">다음단계<span class="icon_arrow_22x18_w"></span></p></a>
+		</div>
+	</section>
+
+</div>
+ <!--/ wrap -->
+
+<footer>
+	<div class="footer_inner">
+		<div class="footer_logo"></div>
+		<div class="foot_left">
+			<ul>
+				<li class="ti">주식회사 스테이다다</li>
+				<li>서울특별시 중구 다산로31길 50-13, 3층(신당동)</li>
+				<li class="letter03 mb20">Tel. 070-4911-9284  /  E-mail. staydada@gmail.com</li>
+				<li class="letter03">ⓒ STAYDADA copyright all rights reserved</li>
+			</ul>
+		</div>
+		<div class="foot_right">
+			<ul>
+				<li class="letter03"><a href="../terms.html" class="policy">Terms & Conditions</a></li>
+				<li class="letter03"><a href="../privacy_policy.html" class="policy">Privacy Policy</a></li>
+				<li class="sns_wrap">
+					<span class="sns_face_8x18_w"></span>
+					<span class="sns_insta_17x18_w"></span>
+					<span class="sns_you_19x18_w"></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+
+</div>
+<!--/ container -->
+
+<!-- modal -->
+<div id="m_pop01" class="modalpop_container">
+	<div id="modalpop_wrap">
+		<a class="modal_close" href="#"></a>
+		<div class="half_wrap modal_half detail_room">
+			<div class="fir">
+				<section class="center fade modal">
+					<div><img src="../images/img_stay_photo01.jpg"></a></div>
+					<div><img src="../images/img_stay_photo02.jpg"></div>
+					<div><img src="../images/img_stay_photo03.jpg"></div>
+					<div><img src="../images/img_stay_photo04.jpg"></div>
+				</section>
+			</div>
+			<div class="sec">
+				<ul class="modal_hosil_wrap">
+					<li class="num"><span>201호</span><span class="wish_icon"></span></li>
+					<li class="sti">계약정보</li>
+					<li class="copy">· 최소 계약기간 : 3개월<br>
+					· 계약 수수료 : 10만원<br>
+					· 관리비/공과금 : 50,000원<br>
+					<span class="small_font">* 전기, 수도, 가스, 인터넷, 공용공간 청소, 보안시스템, 멤버십 등 포함</span><br>
+					· 기타사항 : 매월 1일까지 월세 및 공과금 납부</li>
+				</ul>
+				<ul class="modal_hosil_wrap sec">
+					<li class="sti">시설정보</li>
+					<li>
+					<p class="icon"><img src="../images/hoicon_dryer.png"><span>세탁기</span></p>
+					<p class="icon"><img src="../images/hoicon_dryer.png"><span>건조기</span></p>
+					<p class="icon"><img src="../images/hoicon_refrigerator.png"><span>냉장고</span></p>
+					<p class="icon"><img src="../images/hoicon_air_conditioner.png"><span>에어컨</span></p>
+					<p class="icon"><img src="../images/hoicon_microwave.png"><span>전자레인지</span></p>
+					<p class="icon"><img src="../images/hoicon_rice_cooker.png"><span>전기밥솥</span></p>
+					<p class="icon"><img src="../images/hoicon_air_conditioner.png"><span>인터넷</span></p>
+					<p class="icon"><img src="../images/hoicon_water_purifier.png"><span>정수기</span></p>
+					</li>
+				</ul>
+				<div class="bottom_btn_wrap">
+					<a href="../apply/apply_movein.html"><p class="btn_box blue small">입주신청<span class="icon_apply_18x18_w"></span></p></a>
+					<a href="#" target="_blank"><p class="btn_box blue small">3D 집구경<span class="icon_3d_17x18_w"></span></p></a>
+				</div>
+			</div>
+			<!--/ sec -->
+		</div>
+		<!--/ half_wrap -->
+	</div>
+</div>
+
+<div id="home_yesno"  class="modalpop_container">
+	<div id="modalpop_wrap">
+		<a class="modal_close" href="#"></a>
+			<ul class="">
+				<li class="main_copy"><h3>온라인집꾸미기를하시겠습니까?</h3></li>
+				<li class="copy"><a href="##" target="_blank">예</a> / <a href="apply_movein.html">아니오</a></li>
+			</ul>
+	</div>
+</div>
+
+<div id="lean_overlay"></div>
+<!--/ modal -->
+
+<!-- slider -->
+<script>
+$(document).ready(function() {
+	  $('.fade').slick({
+	  dots: false,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  infinite: false,
+	  autoplaySpeed: 2500
+	});
+	  $('.slider').slick({
+	  dots: false,
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  autoplay: false,
+	  autoplaySpeed: 1500,
+	  infinite: false,
+	  responsive: [
+			{
+			  breakpoint: 1024,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: false
+			  }
+			},
+			{
+			  breakpoint: 639,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: false
+			  }
+			}
+		]
+	});
+});
+</script>
+<script type="text/javascript">
+	$(function() {
+		$('a[rel*=leanModal]').leanModal({ closeButton: ".modal_close" });		
+	});
+</script>
+
+</body>
+</html>

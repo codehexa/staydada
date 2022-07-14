@@ -1,0 +1,57 @@
+<svg id="그룹_1" data-name="그룹 1" xmlns="http://www.w3.org/2000/svg" width="2369" height="2403" viewBox="0 0 2369 2403">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f0eeea;
+      }
+
+      .cls-2 {
+        font-size: 83.333px;
+        text-anchor: middle;
+        font-family: "Noto Sans Korean";
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        font-size: 162.5px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #0008cb;
+        font-family: NanumSquare;
+        font-weight: 800;
+      }
+
+      .cls-4 {
+        font-size: 166.667px;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #0008cb;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="타원_1" data-name="타원 1" class="cls-1" cx="567" cy="561" r="560"/>
+  <circle id="타원_1_복사" data-name="타원 1 복사" class="cls-1" cx="1789" cy="561" r="560"/>
+  <circle id="타원_1_복사_2" data-name="타원 1 복사 2" class="cls-1" cx="567" cy="1819" r="560"/>
+  <circle id="타원_1_복사_3" data-name="타원 1 복사 3" class="cls-1" cx="1794" cy="1819" r="560"/>
+  <text id="스테이다다_STAY에서_정보확인" data-name="스테이다다 STAY에서 정보확인" class="cls-2" x="580.82" y="699.256"><tspan x="580.82">스테이다다 STAY에서</tspan><tspan x="580.82" dy="100">정보확인</tspan></text>
+  <text id="_1" data-name="1" class="cls-3" x="516.186" y="470.195">1</text>
+  <text id="_2" data-name="2" class="cls-3" x="1741.187" y="474.194">2</text>
+  <text id="_3" data-name="3" class="cls-4" x="520.185" y="1734.195">3</text>
+  <path id="모양_1" data-name="모양 1" class="cls-5" d="M966,585v-1h417v1H966Z"/>
+  <path id="모양_2" data-name="모양 2" class="cls-5" d="M1324.71,543.409l0.58-.818,61,43-0.58.818Z"/>
+  <path id="모양_1-2" data-name="모양 1" class="cls-5" d="M1359.4,1043.24l-0.71-.71-309.21,309.2,0.72,0.71Z"/>
+  <path id="모양_2-2" data-name="모양 2" class="cls-5" d="M1063.86,1279.66l-1.01-.15-14.67,75.79,1.01,0.16Z"/>
+  <path id="모양_1-3" data-name="모양 1" class="cls-5" d="M970,1843v-1h417v1H970Z"/>
+  <path id="모양_2-3" data-name="모양 2" class="cls-5" d="M1328.71,1801.41l0.58-.82,61,43-0.58.82Z"/>
+  <text id="_4" data-name="4" class="cls-4" x="1747.185" y="1734.195">4</text>
+  <text id="입주가능일_확인_및_상담" data-name="입주가능일 확인 및 상담" class="cls-2" x="1793.821" y="699.256"><tspan x="1793.821">입주가능일</tspan><tspan x="1793.821" dy="100">확인 및 상담</tspan></text>
+  <text id="가계약_진행" data-name="가계약 진행" class="cls-2" x="568.821" y="1957.256"><tspan x="568.821">가계약 진행</tspan></text>
+  <text id="오프라인_투어_및_계약_확정_" data-name="오프라인 투어 및 계약 확정 " class="cls-2" x="1796.82" y="1957.256"><tspan x="1796.82">오프라인 투어</tspan><tspan x="1796.82" dy="100">및 계약 확정 </tspan></text>
+</svg>
